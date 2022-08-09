@@ -2,7 +2,9 @@ version: '3'
 services:
   exercise1:
     build: .
-    network_mode: host
+    ports:
+      - "9001:9001"
   messageapp:
-    network_mode: host
     image: "cabify/backend-bootcamp-messageapp:latest"
+    ports:
+      - "3000:3000"
