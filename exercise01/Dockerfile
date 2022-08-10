@@ -4,6 +4,6 @@ COPY ./api-rest-server ./
 
 RUN npm install
 
-EXPOSE 9001
+EXPOSE 9003
 
 CMD ["npm", "start"]
