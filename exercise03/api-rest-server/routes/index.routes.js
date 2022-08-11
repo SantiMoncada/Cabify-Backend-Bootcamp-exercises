@@ -24,7 +24,7 @@ router.post("/message", (req, res, next) => {
     .catch(err => {
       Message.create({ destination, body, status: "ERROR" })
         .then(() => {
-          res.status(500).json({ message: "An error has ocurred" });
+          res.status(500).json({ message: "An error has ocurred" })
         })
     })
 })
